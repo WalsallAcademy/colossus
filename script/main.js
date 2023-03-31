@@ -5,7 +5,7 @@ u = a.split(".");
 /* console.log(u[0]); */
 
 const start = () => {
-  window.location.href = "/pages/pg1.html";
+  window.location.href = "./pages/pg1.html";
 };
 
 const next = () => {
