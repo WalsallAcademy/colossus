@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #c3dff2;
+}
+p {
+    font-size: larger;
+}
+
+.container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-start {
+    cursor: pointer;
+    margin-top: 2rem;
+    border: 10px #fadb83 solid;
+    background-color: #7a8be6;
+    width: 180px;
+    height: 90px;
+    font-weight: bolder;
+    font-size: larger;
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+}
+
+.title {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 2rem;
+    border: 10px solid blue;
+}
+
+.text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.controls {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls button {
+    cursor: pointer;
+    margin-top: 2rem;
+    border: 10px #fadb83 solid;
+    background-color: #7a8be6;
+    width: 180px;
+    height: 90px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.action-attempt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.btn-attempt {
+    border: 3px blue solid;
+    background: radial-gradient(rgb(58, 58, 255), rgb(6, 6, 46));
+    width: 180px;
+    height: 100px;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+#working {
+   /*  display: none; */
+    animation: blink 1s;
+    animation-iteration-count: infinite;
+}
+
+/* .end {
+    display: none;
+} */
+
+@keyframes blink {
+    50% { color: transparent; }
+    100% { color: red; }
+  }
+
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    10% { transform:  rotate(-3deg); }
+    20% { transform:  rotate(3deg); }
+    30% { transform:  rotate(0deg); }
+    40% { transform: rotate(3deg); }
+    50% { transform:  rotate(-3deg); }
+    60% { transform:  rotate(0deg); }
+    70% { transform:  rotate(-3deg); }
+    80% { transform:  rotate(3deg); }
+    90% { transform:  rotate(0deg); }
+    100% { transform:  rotate(-3deg); }
+  }
