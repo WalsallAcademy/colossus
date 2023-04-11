@@ -136,6 +136,10 @@ p {
     cursor: pointer;
 }
 
+#question {
+    width: 600px;
+}
+
 @keyframes move {
     0% {
         right: 30%px;
