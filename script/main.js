@@ -58,3 +58,7 @@ const attempt = () => {
     document.getElementById("code").style.color = "red";
   }
 };
+
+const decode = () => {
+  document.getElementById("computer").src = "../img/Screenshot_6.png";
+};

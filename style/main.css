@@ -19,6 +19,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .btn-start {
@@ -49,6 +50,10 @@ p {
 .text {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .controls {
@@ -97,6 +102,24 @@ p {
     display: none;
 } */
 
+
+#valves {
+    margin: auto;
+    position: absolute;
+    width: 300px;
+    right: 36%;
+    animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        right: 30%px;
+    }
+    100% {
+        right: 40%;
+    }
+}
+
 @keyframes blink {
     50% { color: transparent; }
     100% { color: red; }
@@ -115,4 +138,22 @@ p {
     80% { transform:  rotate(3deg); }
     90% { transform:  rotate(0deg); }
     100% { transform:  rotate(-3deg); }
+  }
+
+
+  @media only screen and (max-width: 2000px) {
+    #valves {
+        width: 300px;
+        right: 25%;
+        animation: move 1s infinite alternate;
+    }
+    
+    @keyframes move {
+        0% {
+            right: 20%;
+        }
+        100% {
+            right: 30%;
+        }
+    }
   }
