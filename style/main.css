@@ -16,10 +16,12 @@ p {
 .container {
     margin-top: 2rem;
     display: flex;
+    height: 100vh;
+    width: 90vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    margin: auto;
 }
 
 .btn-start {
@@ -54,6 +56,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
 }
 
 .controls {
@@ -111,12 +114,43 @@ p {
     animation: move 1s infinite alternate;
 }
 
+#input {
+    margin: auto;
+    position: absolute;
+    width: 300px;
+    right: 30%;
+    animation: moveInput 1s infinite alternate;
+}
+
+#question {
+    width: 80%;
+}
+
+.break-code button {
+    border: 10px solid black;
+    color: white;
+    background-color: blue;
+    border-radius: 30%;
+    width: 180px;
+    height: 70px;
+    cursor: pointer;
+}
+
 @keyframes move {
     0% {
         right: 30%px;
     }
     100% {
         right: 40%;
+    }
+}
+
+@keyframes moveInput {
+    0% {
+        right: 28%;
+    }
+    100% {
+        right: 32%;
     }
 }
 
@@ -156,4 +190,13 @@ p {
             right: 30%;
         }
     }
+    @keyframes moveInput {
+        0% {
+            right: 8%;
+        }
+        100% {
+            right: 12%;
+        }
+    }
+
   }

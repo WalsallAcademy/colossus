@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <script src="../script/main.js"></script>
+    <title>Colossus and Code Breaking</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Instructing a computer</h1>
+      </div>
+      <div class="text">
+        <p>
+          As you know, modern computers need
+          <span style="color: red" ;>software</span> too tell do.
+        </p>
+
+        <img id="question" src="../img/Screenshot_12.png" alt="" />
+        <p>
+          Colossus also needed to be told what to do. But back then there was no
+          such thing as software.
+        </p>
+      </div>
+      <div class="controls">
+        <button class="btn-back" onclick="back()"><h3>Back</h3></button>
+        <button class="btn-next" onclick="next()"><h3>Next</h3></button>
+      </div>
+    </div>
+    <script>
+      document.querySelector("#question").onmousedown = () => {
+        document.getElementById("question").src = "../img/Screenshot_11.png";
+      };
+    </script>
+  </body>
+</html>

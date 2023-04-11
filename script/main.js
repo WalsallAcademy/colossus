@@ -62,3 +62,11 @@ const attempt = () => {
 const decode = () => {
   document.getElementById("computer").src = "../img/Screenshot_6.png";
 };
+
+const breakCode2 = () => {
+  document.getElementById("colossus-valve").src = "../img/Screenshot_14.png";
+};
+
+const breakCode3 = () => {
+  document.getElementById("colossus-valve").src = "../img/Screenshot_15.png";
+};
