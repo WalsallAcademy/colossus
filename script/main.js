@@ -9,11 +9,11 @@ const start = () => {
 };
 
 const next = () => {
-  window.location.href = `/pages/pg${parseInt(u[0]) + 1}.html`;
+  window.location.href = `./pages/pg${parseInt(u[0]) + 1}.html`;
 };
 
 const back = () => {
-  window.location.href = `/pages/pg${parseInt(u[0]) - 1}.html`;
+  window.location.href = `./pages/pg${parseInt(u[0]) - 1}.html`;
 };
 
 const backStart = () => {
